@@ -3,7 +3,6 @@ import { useState } from "react";
 import "../styles/index.css";
 
 const Tree = ({ node, level }) => {
-  
   const [children, setChildren] = useState(node.children);
 
   const addChild = () => {
@@ -19,7 +18,7 @@ const Tree = ({ node, level }) => {
         <button onClick={addChild}>+</button>
       </div>
       <div>
-        {children.map((child, index) => (
+        {children.map((child) => (
           <Tree key={child.id} node={child} level={level + 1} />
         ))}
       </div>

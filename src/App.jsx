@@ -1,5 +1,5 @@
-import React from 'react';
-import Tree from './pages/index';
+import React from "react";
+import Tree from "./pages/index";
 
 const App = () => {
   const tree = {
