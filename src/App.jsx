@@ -1,8 +1,17 @@
-// import logo from './logo.svg';
-// import './App.css';
+import React from 'react';
+import Tree from './pages/index';
 
-function App() {
+const App = () => {
+  const tree = {
+    id: 1,
+    children: [],
+  };
 
-}
+  return (
+    <div>
+      <Tree node={tree} level={0} />
+    </div>
+  );
+};
 
 export default App;
